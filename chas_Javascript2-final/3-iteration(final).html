@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+</head>
+<body>
+    <p>Open the console in the browser to see the output of this script.</p>
+
+    <script>
+        const dogs = [
+  { name: "Fido" },
+  { name: "Rex" },
+  { name: "Buddy" },
+];
+function printDogName(dog) {
+  console.log(`The ${dog.name} barks.`);
+}
+
+dogs.forEach(printDogName);
+         </script>
+<script>
+    function printDogNameUppercase(dog) {
+  console.log(`The ${dog.name.toUpperCase()} barks.`);
+}
+
+
+dogs.forEach(printDogNameUppercase);
+</script>
+<script>
+    dogs.forEach(function(dog) {
+  console.log(`The ${dog.name} needs to go for a walk!`);
+});
+</script>
+</body>
+</html>    

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+</head>
+<body>
+    <p>Open the console in the browser to see the output of this script.</p>
+
+    <script>
+const dogs = [
+  { name: "Fido" },
+  { name: "Rex" },
+  { name: "Buddy" },
+];
+
+const doggieWalks = dogs.forEach(function(dog) {
+  console.log(`The ${dog.name} needs to go for a walk!`);
+});
+
+console.log(doggieWalks); // This will log 'undefined'
+</script>
+<script>
+    const doggieWalk = dogs.map(function(dog) {
+  // Use the return statement to specify what should be included in the resulting array.
+  return `The ${dog.name} needs to go for a walk!`;
+});
+
+console.log(doggieWalk);
+</script>
+<script>
+    const shoutyDogNames = dogs.map(function(dog) {
+  return dog.name.toUpperCase();
+});
+
+console.log(shoutyDogNames);
+</script>
+
+</body>
+</html>  
